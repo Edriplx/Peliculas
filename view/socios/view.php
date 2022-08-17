@@ -1,4 +1,4 @@
-<?php include 'header.php' ?>
+<?php  include '../template/header.php'?>
 <!-- Main content -->
 <section class="content"> <!-- /.aqui empieza el dashboard para la programacion ------------------------------------------------------------->
 <h3>Nuevo Socio</h3>    
@@ -14,4 +14,4 @@
     </table>
 </section>
 
-<?php include 'footer.php' ?>
+<?php  include '../template/footer.php'?>
