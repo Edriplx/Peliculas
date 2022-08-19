@@ -1,12 +1,12 @@
-<?php include 'header.php' ?>
+<?php  include '../template/header.php'?>
 <!-- Main content -->
-<section class="content"> <!-- /.aqui empieza el dashboard para la programacion ------------------------------------------------------------->     
+<section class="content"> <!-- /.aqui empieza el dashboard para la programacion ------------------------------------------------------------->
 <div class="row">
         <div class="col-3"></div>
         <div class="col-6 mt-5">
             <div class="card">
                 <div class="card-header">
-                    <b>Eliminar Genero</b>
+                    <b>Eliminar generos</b>
                 </div>
             </div>
             <form>
@@ -14,10 +14,10 @@
                 <label for="act_nombre" class="form-label">Nombre</label>
                 <input type="text" class="form-control" id="act_nombre">
                 <br>
-            <button type="submit">Eliminar</button>
+            <button type="submit" class="btn btn-danger">Eliminar</button>
             </form>
         </div>
     </div>
 </section>
 
-<?php include 'footer.php' ?>
+<?php  include '../template/footer.php'?>

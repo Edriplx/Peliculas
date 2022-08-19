@@ -1,4 +1,4 @@
-<?php include 'header.php' ?>
+<?php  include '../template/header.php'?>
 <!-- Main content -->
 <section class="content"> <!-- /.aqui empieza el dashboard para la programacion ------------------------------------------------------------->
 <div class="row">
@@ -6,7 +6,7 @@
         <div class="col-6 mt-5">
             <div class="card">
                 <div class="card-header">
-                    <b>Eliminar Actor de Peliculas</b>
+                    <b>Eliminar actores-peliculas</b>
                 </div>
             </div>
             <form>
@@ -20,4 +20,4 @@
     </div>
 </section>
 
-<?php include 'footer.php' ?>
+<?php  include '../template/footer.php'?>

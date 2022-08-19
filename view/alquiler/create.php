@@ -1,7 +1,7 @@
-<?php include 'header.php' ?>
+<?php  include '../template/header.php'?>
 <!-- Main content -->
 <section class="content"> <!-- /.aqui empieza el dashboard para la programacion ------------------------------------------------------------->
-<h1>Nuevo Alquiler</h1>
+<h1>Nuevo alquiler</h1>
 <form action="..." target="_blank" style="margin: 15px">
 
   <p>Nombre<br>
@@ -15,4 +15,4 @@
 
 </section>
 
-<?php include 'footer.php' ?>
+<?php  include '../template/footer.php'?>
