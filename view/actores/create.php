@@ -1,18 +1,24 @@
 <?php  include '../template/header.php'?>
-<!-- Main content -->
-<section class="content"> <!-- /.aqui empieza el dashboard para la programacion ------------------------------------------------------------->
-<h1>Nuevo Actores</h1>
-<form action="..." target="_blank" style="margin: 15px">
-
-  <p>Nombre<br>
-  <input type="text" id="soc_nombre" name="soc_nombre"></p>
-
-  <p>Direccion  <br>
-  <input type="text" id="soc_nombre" name="soc_nombre"></p>
-  <input type="submit" id="soc_nombre" value="Grabar">
-
-</form>
-
-</section>
-
-<?php  include '../template/footer.php'?>
+<?php  include '../../controller/actores/create.php'?>
+    <!-- Main content -->
+    <section class="content">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6 mt-5">
+            <div class="card">
+                <div class="card-header">
+                    <b>Registrar Actor</b>
+                </div>
+            </div>
+            <form action='../../controller/actores/create.php' method="POST">
+            <div class="mb-3">
+                <label for="act_nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="act_nombre" name="act_nombre" required>
+                <br>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </div>
+    </section>
+    <!-- /.content -->
+    <?php  include '../template/footer.php'?>

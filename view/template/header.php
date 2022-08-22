@@ -186,7 +186,7 @@
             <a href="index3.html" class="brand-link">
                 <img src="../template/dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
                     class="brand-image img-circle elevation-3" style="opacity: .8">
-                <span class="brand-text font-weight-light">Admin Grupo 2</span>
+                <span class="brand-text font-weight-light">Admin Jordan</span>
             </a>
 
             <!-- Sidebar -->
@@ -198,7 +198,7 @@
                             alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Grupo 2 Admin</a>
+                        <a href="#" class="d-block">Jordan Talahua</a>
                     </div>
                 </div>
 
@@ -231,7 +231,7 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="./index.html" class="nav-link ">
+                                    <a href="../dashboard/index.php" class="nav-link ">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Dashboard</p>
                                     </a>
@@ -267,7 +267,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../alquileres/index.php" class="nav-link">
+                                    <a href="../alquiler/index.php" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Alquiler</p>
                                     </a>
@@ -288,7 +288,7 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0">...</h1>
+                            <h1 class="m-0">Dashboard</h1>
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">

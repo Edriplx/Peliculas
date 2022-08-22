@@ -1,23 +1,33 @@
 <?php  include '../template/header.php'?>
-<!-- Main content -->
-<section class="content"> <!-- /.aqui empieza el dashboard para la programacion ------------------------------------------------------------->
+<?php  include '../../controller/generos/delete.php'?>
 <div class="row">
-        <div class="col-3"></div>
-        <div class="col-6 mt-5">
-            <div class="card">
-                <div class="card-header">
-                    <b>Eliminar generos</b>
-                </div>
+    <div class="col-3"></div>
+    <div class="col-6 mt-5">
+        <div class="card">
+            <div class="card-header">
+                <b>Eliminar Género</b>
             </div>
-            <form>
-            <div class="mb-3">
-                <label for="act_nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="act_nombre">
-                <br>
-            <button type="submit" class="btn btn-danger">Eliminar</button>
-            </form>
         </div>
+        <form action="../../controller/generos/delete.php" method="post">
+            <?php
+                    $row = $result->fetch_assoc();
+                ?>
+            <div class="mb-3">
+                <div class="mb-3">
+                    <label for="gen_id" class="form-label">ID</label>
+                    <input type="text" class="form-control" readonly id="gen_id" 
+                    value="<?php echo $row['gen_id']?>">
+                </div>
+                <div class="mb-3">          
+                    <label for="gen_nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" readonly id="gen_nombre" 
+                    value="<?php echo $row['gen_nombre']?>">
+                </div>
+                <input type="hidden" name="gen_id" value="<?php echo $row['gen_id']?>">
+                <input type="submit" class="btn btn-danger" value="Eliminar"></input>
+        </form>
     </div>
-</section>
+</div>
+</div>
 
 <?php  include '../template/footer.php'?>

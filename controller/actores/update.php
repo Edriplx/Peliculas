@@ -10,10 +10,14 @@
     if(isset($_POST['act_id']))
     {
         include '../../model/conectar.php';
-        $id = $_POST['act_id'];
-        $sql = "DELETE  FROM actores WHERE actores.act_id =".$id;
+        $act_id = $_POST['act_id'];
+        $act_nombre = $_POST['act_nombre'];
+        $sql = "UPDATE actores 
+                SET act_nombre='".$act_nombre."'
+                WHERE act_id =".$act_id;
         $result = $conn->query($sql);
         include '../../model/desconectar.php';
         header('location: ../../view/actores/index.php');
     }
+    
 ?>
