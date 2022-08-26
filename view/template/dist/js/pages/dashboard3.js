@@ -1,8 +1,17 @@
 /* global Chart:false */
 
+
 $(function () {
   'use strict'
-
+  $.ajax({
+    method: "GET",
+    url: "../../../../../controller/dashboard/index.php",
+    success: function (res) {
+      var meses=JSON.parse(res);
+      console.log(meses);
+    }
+    
+  });
   var ticksStyle = {
     fontColor: '#495057',
     fontStyle: 'bold'
@@ -14,20 +23,16 @@ $(function () {
   var $salesChart = $('#sales-chart')
   // eslint-disable-next-line no-unused-vars
   var salesChart = new Chart($salesChart, {
+    
     type: 'bar',
     data: {
-      labels: ['JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'],
+      labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Junio', 'Julio', 'Agosto'],
       datasets: [
         {
-          backgroundColor: '#007bff',
-          borderColor: '#007bff',
-          data: [1000, 2000, 3000, 2500, 2700, 2500, 3000]
+          backgroundColor: '#499BF2',
+          borderColor: '#499BF2',
+          data: [, 2000, 3000, 2500, 2700, 2500, 3000]
         },
-        {
-          backgroundColor: '#ced4da',
-          borderColor: '#ced4da',
-          data: [700, 1700, 2700, 2000, 1800, 1500, 2000]
-        }
       ]
     },
     options: {

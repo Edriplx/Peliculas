@@ -5,15 +5,15 @@
     <div class="col-6 mt-5">
         <div class="card">
             <div class="card-header">
-                <b>Registrar Pelicula</b>
+                <b>Registrar Películas</b>
             </div>
         </div>
         <form action='../../controller/peliculas/create.php' method="POST" novalidate>
             <div class="mb-3 mt-3">
                 <label class="form-label">Género</label>
-                <select name="gen_id" id="gen_id">
+                <select name="gen_id" id="gen_id" class="form-control">
                     <?php
-                        while($row = $result->fecth_assoc())
+                        while($row = $result->fetch_assoc())
                         {
                             echo '<option value="'.$row['gen_id'].'">'.$row['gen_nombre'].'</option>';
                         }

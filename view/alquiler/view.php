@@ -18,31 +18,31 @@
                 ?>
                 <div class="mb-3">
                     <label for="alq_id" class="form-label">ID</label>
-                    <input type="text" class="form-control" readonly id="act_id" value="<?php echo $row['alq_id'] ?>">
+                    <input type="text" class="form-control" readonly id="alq_id" value="<?php echo $row['alq_id'] ?>">
                 </div>
                 <div class="mb-3">
                     <label for="soc_nombre" class="form-label">Nombre de Socio</label>
-                    <input type="text" class="form-control" readonly id="act_nombre" value="<?php echo $row['soc_nombre'] ?>">
+                    <input type="text" class="form-control" readonly id="soc_nombre" value="<?php echo $row['soc_nombre'] ?>">
                 </div>
                 <div class="mb-3">
                     <label for="pel_nombre" class="form-label">Nombre de pelicula</label>
-                    <input type="text" class="form-control" readonly id="act_nombre" value="<?php echo $row['pel_nombre'] ?>">
+                    <input type="text" class="form-control" readonly id="pel_nombre" value="<?php echo $row['pel_nombre'] ?>">
                 </div>
                 <div class="mb-3">
                     <label for="alq_fecha_desde" class="form-label">Fecha de inicio</label>
-                    <input type="text" class="form-control" readonly id="act_nombre" value="<?php echo $row['alq_fecha_desde'] ?>">
+                    <input type="text" class="form-control" readonly id="alq_fecha_desde" value="<?php echo $row['alq_fecha_desde'] ?>">
                 </div>
                 <div class="mb-3">
                     <label for="alq_fecha_hasta" class="form-label">Fecha máxima</label>
-                    <input type="text" class="form-control" readonly id="act_nombre" value="<?php echo $row['alq_fecha_hasta'] ?>">
+                    <input type="text" class="form-control" readonly id="alq_fecha_hasta" value="<?php echo $row['alq_fecha_hasta'] ?>">
                 </div>
                 <div class="mb-3">
                     <label for="alq_valor" class="form-label">Valor</label>
-                    <input type="text" class="form-control" readonly id="act_id" value="<?php echo $row['alq_valor'] ?>">
+                    <input type="text" class="form-control" readonly id="alq_valor" value="<?php echo $row['alq_valor'] ?>">
                 </div>
                 <div class="mb-3">
                     <label for="alq_fecha_entrega" class="form-label">Fecha de entrega</label>
-                    <input type="text" class="form-control" readonly id="act_nombre" value="<?php echo $row['alq_fecha_entrega'] ?>">
+                    <input type="text" class="form-control" readonly id="alq_fecha_entrega" value="<?php echo $row['alq_fecha_entrega'] ?>">
                 </div>
                 <input type="hidden" name="alq_id" value="<?php echo $row['alq_id'] ?>">
             </form>

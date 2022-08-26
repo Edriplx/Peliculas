@@ -17,6 +17,9 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 <script src="../template/plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="../template/plugins/jquery-ui/jquery-ui.min.js"></script>
@@ -25,6 +28,8 @@
   $.widget.bridge('uibutton', $.ui.button)
 </script>
 <!-- Bootstrap 4 -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 <script src="../template/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- ChartJS -->
 <script src="../template/plugins/chart.js/Chart.min.js"></script>
@@ -49,6 +54,6 @@
 <!-- AdminLTE for demo purposes -->
 <script src="../template/dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="../template/dist/js/pages/dashboard.js"></script>
+<script src="../template/dist/js/pages/dashboard3.js"></script>
 </body>
 </html>

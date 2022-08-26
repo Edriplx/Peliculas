@@ -5,7 +5,7 @@
     <div class="col-6 mt-5">
         <div class="card">
             <div class="card-header">
-                <b>Eliminar Actor Pelicula</b>
+                <b>Eliminar Actor Película</b>
             </div>
         </div>
         <form action="../../controller/actor_pelicula/delete.php" method="post">
@@ -26,12 +26,12 @@
                 <div class="mb-3">          
                     <label for="pel_nombre" class="form-label">Pelicula</label>
                     <input type="text" class="form-control" readonly id="pel_nombre" 
-                    value="<?php echo $row['act_nombre']?>">
+                    value="<?php echo $row['pel_nombre']?>">
                 </div>
                 <div class="mb-3">          
                     <label for="apl_papel" class="form-label">Papel</label>
                     <input type="text" class="form-control" readonly id="apl_papel" 
-                    value="<?php echo $row['act_nombre']?>">
+                    value="<?php echo $row['apl_papel']?>">
                 </div>
                 <input type="hidden" name="apl_id" value="<?php echo $row['apl_id']?>">
                 <input type="submit" class="btn btn-danger" value="Eliminar"></input>

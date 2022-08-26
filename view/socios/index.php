@@ -3,14 +3,14 @@
     <div class="row">
         <div class="col-2"></div>
         <div class="col-7 mt-5">
-            <div class="card">
+            <div class="card text-center">
                 <div class="card-header">
-                    <div class="row align-items-center">
-                        <div class="col"><b>Socios registrados</b></div>
-                        <div class="col"></div>
-                        <div class="col"><a href="create.php"><button type="button" class="btn btn-success">Agregar</button></a></div>
-                    </div>
+                        <h3>Socios registrados</h3>
+                        <hr>
+                        <a href="create.php"><button type="button" class="btn btn-outline-primary">Agregar</button></a>
                 </div>
+            </div>
+            <div class="card">
                 <table class="table table-hover align-middle">
                     <thead>
                         <tr>
@@ -29,11 +29,11 @@
                                 echo'<td>'.$row["soc_cedula"].'</td>';
                                 echo'<td>'.$row["soc_nombre"].'</td>';
                                 echo'<td>'.$row["soc_telefono"].'</td>';
-                                echo'
-                                <td><button><a href="update.php "><i class="fa fa-pen text-success"></i></a></button> 
-                                <button><a href="view.php"><i class="fa fa-eye text-primary"></i></a></button>
-                                <button><a href="delete.php"><i class="fa fa-trash text-danger" aria-hidden="true"></i></a></button></td>';
-                                echo '</tr>';
+                                echo '
+                                <td><button class="btn btn-outline-light"><a href="update.php?soc_id=' . $row["soc_id"] . '"><i class="fas fa-edit text-dark"></i></a></button> 
+                                <button class="btn btn-outline-light"><a href="view.php?soc_id=' . $row["soc_id"] . '"><i class="fa fa-eye text-secondary"></i></a></button>
+                                <button class="btn btn-outline-light"><a href="delete.php?soc_id=' . $row["soc_id"] . '"><i class="fa fa-trash text-danger" aria-hidden="true"></i></a></button></td>';
+                            echo '</tr>';
                             }
                             } else {
                             echo "0 results";

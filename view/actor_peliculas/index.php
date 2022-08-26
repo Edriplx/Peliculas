@@ -3,11 +3,13 @@
 <div class="row">
     <div class="col-3"></div>
     <div class="col-6 mt-5">
-        <div class="card">
+        <div class="card text-center">
             <div class="card-header">
-                <b>Peliculas registradass</b>
-                <a href="create.php"><button type="button" class="btn btn-success" style="margin-left:450px;">Agregar</button></a>
+                <h3>Peliculas registradas</h3>
+                <a href="create.php"><button type="button" class="btn btn-outline-primary" >Agregar</button></a>
             </div>
+        </div>
+        <div class="card">
             <table class="table table-hover align-middle">
                 <thead>
                     <tr>
@@ -28,9 +30,9 @@
                             echo '<td>' . $row["pel_nombre"] . '</td>';
                             echo '<td>' . $row["apl_papel"] . '</td>';
                             echo '
-                                <td><button><a href="update.php?gen_id=' . $row["apl_id"] . '"><i class="fa fa-pen text-success"></i></a></button> 
-                                <button><a href="view.php?gen_id=' . $row["apl_id"] . '"><i class="fa fa-eye text-primary"></i></a></button>
-                                <button><a href="delete.php?gen_id=' . $row["apl_id"] . '"><i class="fa fa-trash text-danger" aria-hidden="true"></i></a></button></td>';
+                                <td><button class="btn btn-outline-light"><a href="update.php?apl_id=' . $row["apl_id"] . '"><i class="fas fa-edit text-dark"></i></a></button> 
+                                <button class="btn btn-outline-light"><a href="view.php?apl_id=' . $row["apl_id"] . '"><i class="fa fa-eye text-secondary"></i></a></button>
+                                <button class="btn btn-outline-light"><a href="delete.php?apl_id=' . $row["apl_id"] . '"><i class="fa fa-trash text-danger" aria-hidden="true"></i></a></button></td>';
                             echo '</tr>';
                         }
                     } else {

@@ -3,11 +3,14 @@
 <div class="row">
     <div class="col-3"></div>
     <div class="col-6 mt-5">
-        <div class="card">
+        <div class="card text-center">
             <div class="card-header">
-                <b>Peliculas registradass</b>
-                <a href="create.php"><button type="button" class="btn btn-success" style="margin-left:450px;">Agregar</button></a>
+                <h3>Peliculas registradas</h3>
+                <hr>
+                <a href="create.php"><button type="button" class=" btn btn-outline-primary">Agregar nueva película</button></a>
             </div>
+        </div>
+        <div class="card">
             <table class="table table-hover align-middle">
                 <thead>
                     <tr>
@@ -30,9 +33,9 @@
                             echo '<td>' . $row["pel_costo"] . '</td>';
                             echo '<td>' . $row["pel_fecha_estreno"] . '</td>';
                             echo '
-                                <td><button><a href="update.php?pel_id=' . $row["pel_id"] . '"><i class="fa fa-pen text-success"></i></a></button> 
-                                <button><a href="view.php?pel_id=' . $row["pel_id"] . '"><i class="fa fa-eye text-primary"></i></a></button>
-                                <button><a href="delete.php?pel_id=' . $row["pel_id"] . '"><i class="fa fa-trash text-danger" aria-hidden="true"></i></a></button></td>';
+                                <td><button class="btn btn-outline-light"><a href="update.php?pel_id=' . $row["pel_id"] . '"><i class="fas fa-edit text-dark"></i></a></button> 
+                                <button class="btn btn-outline-light"><a href="view.php?pel_id=' . $row["pel_id"] . '"><i class="fa fa-eye text-secondary"></i></a></button>
+                                <button class="btn btn-outline-light"><a href="delete.php?pel_id=' . $row["pel_id"] . '"><i class="fa fa-trash text-danger" aria-hidden="true"></i></a></button></td>';
                             echo '</tr>';
                         }
                     } else {

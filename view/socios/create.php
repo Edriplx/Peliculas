@@ -14,7 +14,6 @@
             <div class="mb-3 mt-3">
                 <label for="soc_cedula" class="form-label">Cédula</label>
                 <input type="number" class="form-control" id="soc_cedula" name="soc_cedula" aria-describedby="emailHelp" required>
-                <div id="emailHelp" class="form-text">No compartiremos sus datos personales con nadie.</div>
             </div>
             <div class="mb-3">
                 <label for="soc_nombre" class="form-label">Nombre</label>

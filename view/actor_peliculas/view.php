@@ -1,17 +1,42 @@
 <?php  include '../template/header.php'?>
-<!-- Main content -->
-<section class="content"> <!-- /.aqui empieza el dashboard para la programacion ------------------------------------------------------------->
-<h3>Nuevo Actores-Peliculas</h3>    
-<table style="margin: 0 auto; border: black 3px solid;">
-        <tr>
-            <td>Nombre:</td>
-            <td>xxxxxxxxxxxxxxxxxxx</td>
-        </tr>
-        <tr>
-            <td>Direccion:</td>
-            <td>xxxxxxxxxxxxxxxxxxx</td>
-        </tr>
-    </table>
-</section>
+<?php  include '../../controller/actor_pelicula/delete.php'?>
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-6 mt-5">
+        <div class="card">
+            <div class="card-header">
+                <b>Visualizar Actor Pelicula</b>
+            </div>
+        </div>
+        <form action="../../controller/actor_pelicula/delete.php" method="post">
+            <?php
+                    $row = $result->fetch_assoc();
+                ?>
+            <div class="mb-3">
+                <div class="mb-3">
+                    <label for="apl_id" class="form-label">ID</label>
+                    <input type="text" class="form-control" readonly id="gen_id" 
+                    value="<?php echo $row['apl_id']?>">
+                </div>
+                <div class="mb-3">          
+                    <label for="act_nombre" class="form-label">Actor</label>
+                    <input type="text" class="form-control" readonly id="act_nombre" 
+                    value="<?php echo $row['act_nombre']?>">
+                </div>
+                <div class="mb-3">          
+                    <label for="pel_nombre" class="form-label">Pelicula</label>
+                    <input type="text" class="form-control" readonly id="pel_nombre" 
+                    value="<?php echo $row['pel_nombre']?>">
+                </div>
+                <div class="mb-3">          
+                    <label for="apl_papel" class="form-label">Papel</label>
+                    <input type="text" class="form-control" readonly id="apl_papel" 
+                    value="<?php echo $row['apl_papel']?>">
+                </div>
+                <input type="hidden" name="apl_id" value="<?php echo $row['apl_id']?>">
+        </form>
+    </div>
+</div>
+</div>
 
 <?php  include '../template/footer.php'?>
